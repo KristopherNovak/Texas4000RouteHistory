@@ -1,0 +1,696 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-attachment: fixed;
+  box-sizing:border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#f2f5f8
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  width:100%;
+  height:100%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color:black;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.Title-Box{
+  display:block;
+  position:absolute;
+  padding: 0rem 1.5rem;
+  left:50%;
+  width: 40rem;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  background-image: url(../img/JacksonWY.JPG);
+  background-size: cover;
+  background-position: 0% 33.5%;
+
+}
+
+.Title-Box > h1{
+  color:white;
+
+}
+
+.Title-Box__Name{
+  position:absolute;
+  color:white;
+  margin:0;
+  padding:0;
+  left:.5rem;
+  bottom:.25rem;
+  font-size:.75rem;
+}
+
+.Title-Box__Email{
+  position:absolute;
+  color:white;
+  margin:0;
+  padding:0;
+  right:.5rem;
+  bottom:.25rem;
+  font-size:.75rem;
+}
+
+.WhatIsT4K-Box{
+  position:absolute;
+  background-color:#e2913f;
+  height: 10rem;
+  width: 40rem;
+  text-align:center;
+  top:10.5rem;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.WhatIsT4K-Box__header{
+  margin:0;
+  background-color:#3d81b5;
+  width:100%;
+}
+
+.WhatIsT4K-Box > div{
+  text-align:left;
+  margin: 0rem .5rem;
+  position:absolute;
+  top:1rem;
+}
+
+.WhatIsThisSite-Box{
+  position:absolute;
+  background-color:#e2913f;
+  height: 11.5rem;
+  width: 40rem;
+  text-align:center;
+  top:21.7rem;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.WhatIsThisSite-Box__header{
+  margin:0;
+  background-color:#3d81b5;
+  width:100%;
+}
+
+.WhatIsThisSite-Box > div{
+  text-align:left;
+  margin: 0rem .5rem;
+  position:absolute;
+  top:1rem;
+}
+
+.Symbol-Box{
+  position:absolute;
+  background-color:#e2913f;
+  height: 20rem;
+  width: 17rem;
+  text-align:center;
+  top:34.5rem;
+  left:50%;
+  transform: translateX(-20rem);
+}
+
+.Symbol-Box__header{
+  margin:0;
+  background-color:#3d81b5;
+  width:100%;
+}
+
+.Symbol-Box__Image{
+  height: 2rem;
+  width: 2rem;
+  position:absolute;
+  left: .7rem;
+}
+
+.Symbol-Box__Ozarks-Image{top: 2.5rem;}
+.Symbol-Box__Sierra-Image{top: 5rem;}
+.Symbol-Box__Smokies-Image{top: 7.5rem;}
+.Symbol-Box__Rockies-Image{top: 10rem;}
+.Symbol-Box__Two-Routes-Image{top: 12.5rem;}
+.Symbol-Box__Three-Routes-Image{top: 15.0rem;}
+.Symbol-Box__Four-Routes-Image{top: 17.5rem;}
+
+.Symbol-Box__Text{
+  position:absolute;
+  left: 3.5rem;
+}
+
+.Symbol-Box__Ozarks-Text{top: 1.625rem;}
+.Symbol-Box__Sierra-Text{top: 4.125rem;}
+.Symbol-Box__Smokies-Text{top: 6.625rem;}
+.Symbol-Box__Rockies-Text{top: 9.125rem;}
+.Symbol-Box__Two-Routes-Text{top: 11.625rem;}
+.Symbol-Box__Three-Routes-Text{top: 14.125rem;}
+.Symbol-Box__Four-Routes-Text{top: 16.625rem;}
+
+.Year-Box{
+  position:absolute;
+  background-color:#e2913f;
+  height: 20rem;
+  width: 21.5rem;
+  text-align:center;
+  top:34.5rem;
+  left:50%;
+  transform: translateX(-1.5rem);
+}
+
+.Year-Box__header{
+  margin:0;
+  background-color:#3d81b5;
+  width:100%;
+}
+
+.Year-Box__Image{
+  height: 2rem;
+  width: 2rem;
+  position:absolute;
+}
+
+.Year-Box__Text{
+  position:absolute;
+}
+
+.Year-Box__Image-2004{top: 2.5rem; left: .7rem;}
+.Year-Box__Image-2005{top: 5rem; left: .7rem;}
+.Year-Box__Image-2006{top: 7.5rem; left: .7rem;}
+.Year-Box__Image-2007{top: 10rem; left: .7rem;}
+.Year-Box__Image-2008{top: 12.5rem; left: .7rem;}
+.Year-Box__Image-2009{top: 15rem; left: .7rem;}
+.Year-Box__Image-2010{top: 17.5rem; left: .7rem;}
+.Year-Box__Image-2011{top: 2.5rem; left: 7rem;}
+.Year-Box__Image-2012{top: 5rem; left: 7rem;}
+.Year-Box__Image-2013{top: 7.5rem; left: 7rem;}
+.Year-Box__Image-2014{top: 10rem; left: 7rem;}
+.Year-Box__Image-2015{top: 12.5rem; left: 7rem;}
+.Year-Box__Image-2016{top: 15rem; left: 7rem;}
+.Year-Box__Image-2017{top: 17.5rem; left: 7rem;}
+.Year-Box__Image-2018{top: 2.5rem; left: 13.3rem;}
+.Year-Box__Image-2019{top: 5rem; left: 13.3rem;}
+.Year-Box__Image-2021{top: 7.5rem; left: 13.3rem;}
+.Year-Box__Image-2022{top: 10rem; left: 13.3rem;}
+.Year-Box__Image-2023{top: 12.5rem; left: 13.3rem;}
+.Year-Box__Image-2024{top: 15rem; left: 13.3rem;}
+.Year-Box__Image-Multiple-Years{top: 17.5rem; left: 13.3rem;}
+
+.Year-Box__Text-2004{top: 1.625rem; left: 3.5rem;}
+.Year-Box__Text-2005{top: 4.125rem; left: 3.5rem;}
+.Year-Box__Text-2006{top: 6.625rem; left: 3.5rem;}
+.Year-Box__Text-2007{top: 9.125rem; left: 3.5rem;}
+.Year-Box__Text-2008{top: 11.625rem; left: 3.5rem;}
+.Year-Box__Text-2009{top: 14.125rem; left: 3.5rem;}
+.Year-Box__Text-2010{top: 16.625rem; left: 3.5rem;}
+.Year-Box__Text-2011{top: 1.625rem; left: 9.8rem;}
+.Year-Box__Text-2012{top: 4.125rem; left: 9.8rem;}
+.Year-Box__Text-2013{top: 6.625rem; left: 9.8rem;}
+.Year-Box__Text-2014{top: 9.125rem; left: 9.8rem;}
+.Year-Box__Text-2015{top: 11.625rem; left: 9.8rem;}
+.Year-Box__Text-2016{top: 14.125rem; left: 9.8rem;}
+.Year-Box__Text-2017{top: 16.625rem; left: 9.8rem;}
+.Year-Box__Text-2018{top: 1.625rem; left: 16.1rem;}
+.Year-Box__Text-2019{top: 4.125rem; left: 16.1rem;}
+.Year-Box__Text-2021{top: 6.625rem; left: 16.1rem;}
+.Year-Box__Text-2022{top: 9.125rem; left: 16.1rem;}
+.Year-Box__Text-2023{top: 11.625rem; left: 16.1rem;}
+.Year-Box__Text-2024{top: 14.125rem; left: 16.1rem;}
+.Year-Box__Text-Multiple-Years{top: 16rem; left: 16.1rem; width:1rem;}
+
+
+
+.Tab-Box{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:80.6rem;
+  width: 37rem;
+  padding:1rem 1.5rem;
+  justify-content: space-between;
+  display:flex;
+  background-color: #3d81b5;
+}
+
+.Tab-Box--Tab--Button{
+  position:relative;
+  margin-top: 0rem;
+  height: 2rem;
+}
+
+#Tab__By-Year{
+  width: 7.25rem;
+}
+
+#Tab__By-Route{
+  width: 7.75rem;
+}
+
+#Tab__By-Calendar-Date{
+  width: 12rem;
+}
+
+#Tab__By-Day{
+  width: 6.75rem;
+}
+
+.Tab-Box--Tab--Button > p{
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-137.5%);
+  width: 10rem;
+  color:black;
+}
+
+.Option-Box{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:84.6rem;
+  width: 37rem;
+  justify-content: center;
+  gap: .5rem;
+  display:flex;
+  flex-wrap: wrap;
+  padding:1rem 1.5rem;
+  background-color: #e2913f;
+}
+
+.Option-Box--Option--Button{
+  position:relative;
+  width: 4.5rem;
+  height: 2rem;
+  text-align:center;
+}
+
+
+
+.Option-Box--Option--Button > p{
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-137.5%);
+  color:black;
+}
+
+.Filter-Box{
+  display:inline-block;
+  position:relative;
+}
+
+.selectedTab{
+  background-color: #e2913f;
+  color:white;
+}
+
+.selectedTab > p{
+  color:white;
+}
+
+.selectedOption{
+  background-color: #3d81b5;
+  color:white;
+}
+
+.selectedOption > p{
+  background-color: #3d81b5;
+  color:white;
+}
+
+.leaflet-container{
+  position:absolute;
+  top: 55.8rem;
+  height: 30rem;
+  width:40rem;
+  text-align: center;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+@media only screen and (max-width: 44.68rem){
+
+  .Symbol-Box{
+    transform:translateX(-50%);
+    top:45rem;
+    width:28rem;
+    height:12.5rem;
+  }
+
+  .Symbol-Box__Two-Routes-Image{top: 2.5rem; left: 14rem;}
+  .Symbol-Box__Three-Routes-Image{top: 5.0rem; left:14rem;}
+  .Symbol-Box__Four-Routes-Image{top: 7.5rem; left: 14rem;}
+
+  .Symbol-Box__Two-Routes-Text{top: 1.625rem; left: 16.8rem;}
+  .Symbol-Box__Three-Routes-Text{top: 4.125rem; left: 16.8rem;}
+  .Symbol-Box__Four-Routes-Text{top: 6.625rem; left:16.8rem;}
+
+  .Year-Box{
+    transform:translateX(-50%);
+    top: 58.8rem;
+    width:28rem;
+  }
+
+  .Year-Box__Image-2011{top: 2.5rem; left: 10.5rem;}
+  .Year-Box__Image-2012{top: 5rem; left: 10.5rem;}
+  .Year-Box__Image-2013{top: 7.5rem; left: 10.5rem;}
+  .Year-Box__Image-2014{top: 10rem; left: 10.5rem;}
+  .Year-Box__Image-2015{top: 12.5rem; left: 10.5rem;}
+  .Year-Box__Image-2016{top: 15rem; left: 10.5rem;}
+  .Year-Box__Image-2017{top: 17.5rem; left: 10.5rem;}
+  .Year-Box__Image-2018{top: 2.5rem; left: 20.3rem;}
+  .Year-Box__Image-2019{top: 5rem; left: 20.3rem;}
+  .Year-Box__Image-2021{top: 7.5rem; left: 20.3rem;}
+  .Year-Box__Image-2022{top: 10rem; left: 20.3rem;}
+  .Year-Box__Image-2023{top: 12.5rem; left: 20.3rem;}
+  .Year-Box__Image-2024{top: 15rem; left: 20.3rem;}
+  .Year-Box__Image-Multiple-Years{top: 17.5rem; left: 20.3rem;}
+
+  .Year-Box__Text-2011{top: 1.625rem; left: 13.5rem;}
+  .Year-Box__Text-2012{top: 4.125rem; left: 13.5rem;}
+  .Year-Box__Text-2013{top: 6.625rem; left: 13.5rem;}
+  .Year-Box__Text-2014{top: 9.125rem; left: 13.5rem;}
+  .Year-Box__Text-2015{top: 11.625rem; left: 13.5rem;}
+  .Year-Box__Text-2016{top: 14.125rem; left: 13.5rem;}
+  .Year-Box__Text-2017{top: 16.625rem; left: 13.5rem;}
+  .Year-Box__Text-2018{top: 1.625rem; left: 23.1rem;}
+  .Year-Box__Text-2019{top: 4.125rem; left: 23.1rem;}
+  .Year-Box__Text-2021{top: 6.625rem; left: 23.1rem;}
+  .Year-Box__Text-2022{top: 9.125rem; left: 23.1rem;}
+  .Year-Box__Text-2023{top: 11.625rem; left: 23.1rem;}
+  .Year-Box__Text-2024{top: 14.125rem; left: 23.1rem;}
+  .Year-Box__Text-Multiple-Years{top: 16rem; left: 23.1rem; width:1rem;}
+
+
+
+  .Title-Box{
+    width:28rem;
+  }
+
+  .WhatIsT4K-Box{
+    top: 13.7rem;
+    width:28rem;
+    height: 13rem;
+  }
+
+  .WhatIsThisSite-Box{
+    width:28rem;
+    top: 27.8rem;
+    height:16rem;
+  }
+
+
+
+
+  .leaflet-container{
+    top:80rem;
+    height: 28rem;
+    width:28rem;
+  }
+
+  .Tab-Box{
+    top:103.8rem;
+    width: 25rem;
+    padding:1rem 1.5rem;
+    background-color:black;
+    justify-content: space-between;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #3d81b5;
+  }
+  
+  .Option-Box{
+    top: 117.8rem;
+    width: 25rem;
+    justify-content: center;
+    gap: .5rem;
+    display:flex;
+    flex-wrap: wrap;
+    padding:1rem 1.5rem;
+    background-color: #e2913f;
+  }
+
+  .Tab-Box--Tab--Button{
+    position:relative;
+    width: 25rem;
+    margin: .5rem 0rem;
+    height: 2.5rem;
+  }
+  
+  .Option-Box--Option--Button{
+    position:relative;
+    width: 25rem;
+    height: 2rem;
+    text-align:center;
+  }
+  
+  .Option-Box--Option--Button > p{
+    display: inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-137.5%);
+    color:black;
+  }
+
+  #Tab__By-Year{
+    width: 25rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Route{
+    width: 25rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Calendar-Date{
+    width: 25rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Day{
+    width: 25rem;
+    height: 2rem;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 33.75rem){
+
+  .Title-Box__Name{
+    font-size:.65rem;
+  }
+  
+  .Title-Box__Email{
+    font-size:.65rem;
+  }
+
+  .Symbol-Box{
+    transform:translateX(-50%);
+    top:53.3rem;
+    width:20rem;
+    height:20rem;
+  }
+
+  .Symbol-Box__Two-Routes-Image{top: 12.5rem; left: .7rem;}
+  .Symbol-Box__Three-Routes-Image{top: 15.0rem; left: .7rem;}
+  .Symbol-Box__Four-Routes-Image{top: 17.5rem; left: .7rem;}
+
+  .Symbol-Box__Two-Routes-Text{top: 11.625rem; left:3.5rem;}
+  .Symbol-Box__Three-Routes-Text{top: 14.125rem; left:3.5rem;}
+  .Symbol-Box__Four-Routes-Text{top: 16.625rem; left:3.5rem;}
+
+  .Year-Box{
+    transform:translateX(-50%);
+    top: 74.5rem;
+    width:20rem;
+  }
+
+  .Year-Box__Image-2004{top: 2.5rem; left: .7rem;}
+  .Year-Box__Image-2005{top: 5rem; left: .7rem;}
+  .Year-Box__Image-2006{top: 7.5rem; left: .7rem;}
+  .Year-Box__Image-2007{top: 10rem; left: .7rem;}
+  .Year-Box__Image-2008{top: 12.5rem; left: .7rem;}
+  .Year-Box__Image-2009{top: 15rem; left: .7rem;}
+  .Year-Box__Image-2010{top: 17.5rem; left: .7rem;}
+  .Year-Box__Image-2011{top: 2.5rem; left: 7rem;}
+  .Year-Box__Image-2012{top: 5rem; left: 7rem;}
+  .Year-Box__Image-2013{top: 7.5rem; left: 7rem;}
+  .Year-Box__Image-2014{top: 10rem; left: 7rem;}
+  .Year-Box__Image-2015{top: 12.5rem; left: 7rem;}
+  .Year-Box__Image-2016{top: 15rem; left: 7rem;}
+  .Year-Box__Image-2017{top: 17.5rem; left: 7rem;}
+  .Year-Box__Image-2018{top: 2.5rem; left: 13.3rem;}
+  .Year-Box__Image-2019{top: 5rem; left: 13.3rem;}
+  .Year-Box__Image-2021{top: 7.5rem; left: 13.3rem;}
+  .Year-Box__Image-2022{top: 10rem; left: 13.3rem;}
+  .Year-Box__Image-2023{top: 12.5rem; left: 13.3rem;}
+  .Year-Box__Image-2024{top: 15rem; left: 13.3rem;}
+  .Year-Box__Image-Multiple-Years{top: 17.5rem; left: 13.3rem;}
+  
+  .Year-Box__Text-2004{top: 1.625rem; left: 3.5rem;}
+  .Year-Box__Text-2005{top: 4.125rem; left: 3.5rem;}
+  .Year-Box__Text-2006{top: 6.625rem; left: 3.5rem;}
+  .Year-Box__Text-2007{top: 9.125rem; left: 3.5rem;}
+  .Year-Box__Text-2008{top: 11.625rem; left: 3.5rem;}
+  .Year-Box__Text-2009{top: 14.125rem; left: 3.5rem;}
+  .Year-Box__Text-2010{top: 16.625rem; left: 3.5rem;}
+  .Year-Box__Text-2011{top: 1.625rem; left: 9.8rem;}
+  .Year-Box__Text-2012{top: 4.125rem; left: 9.8rem;}
+  .Year-Box__Text-2013{top: 6.625rem; left: 9.8rem;}
+  .Year-Box__Text-2014{top: 9.125rem; left: 9.8rem;}
+  .Year-Box__Text-2015{top: 11.625rem; left: 9.8rem;}
+  .Year-Box__Text-2016{top: 14.125rem; left: 9.8rem;}
+  .Year-Box__Text-2017{top: 16.625rem; left: 9.8rem;}
+  .Year-Box__Text-2018{top: 1.625rem; left: 16.1rem;}
+  .Year-Box__Text-2019{top: 4.125rem; left: 16.1rem;}
+  .Year-Box__Text-2021{top: 6.625rem; left: 16.1rem;}
+  .Year-Box__Text-2022{top: 9.125rem; left: 16.1rem;}
+  .Year-Box__Text-2023{top: 11.625rem; left: 16.1rem;}
+  .Year-Box__Text-2024{top: 14.125rem; left: 16.1rem;}
+  .Year-Box__Text-Multiple-Years{top: 16rem; left: 16.1rem; width:1rem;}
+
+
+
+  .Title-Box{
+    width:20rem;
+  }
+
+  .Title-Box__Title{
+    font-size: 2.5rem;
+  }
+
+  .WhatIsT4K-Box{
+    top: 11.9rem;
+    width:20rem;
+    height: 17.5rem;
+  }
+
+  .WhatIsT4K-Box > div > p{
+    font-size:1rem;
+  }
+
+  .WhatIsThisSite-Box{
+    width:20rem;
+    top: 30.5rem;
+    height:21.7rem;
+  }
+
+  .leaflet-container{
+    top: 95.7rem;
+    height: 30rem;
+    width:20rem;
+  }
+
+  .Tab-Box{
+    top:121.6rem;
+    width: 17rem;
+    padding:1rem 1.5rem;
+    background-color:black;
+    justify-content: space-between;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #3d81b5;
+  }
+  
+  .Option-Box{
+    top: 135.6rem;
+    width: 17rem;
+    justify-content: center;
+    gap: .5rem;
+    display:flex;
+    flex-wrap: wrap;
+    padding:1rem 1.5rem;
+    background-color: #e2913f;
+  }
+
+  .Tab-Box--Tab--Button{
+    position:relative;
+    width: 17rem;
+    margin: .5rem 0rem;
+    height: 2.5rem;
+  }
+  
+  .Option-Box--Option--Button{
+    position:relative;
+    width: 17rem;
+    height: 2rem;
+    text-align:center;
+  }
+  
+  .Option-Box--Option--Button > p{
+    display: inline-block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-137.5%);
+    color:black;
+  }
+
+  #Tab__By-Year{
+    width: 17rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Route{
+    width: 17rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Calendar-Date{
+    width: 17rem;
+    height: 2rem;
+  }
+  
+  #Tab__By-Day{
+    width: 17rem;
+    height: 2rem;
+  }
+
+
+}
