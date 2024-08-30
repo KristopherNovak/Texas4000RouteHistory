@@ -1,8 +1,3 @@
-# React + Vite
+# React Folder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This folder includes all the code for the frontend of the website. The img folder consists of all the icons that the map displays; the public folder includes the favicon for the website; and the src folder includes all of the source code for this project. The index.html file in this repository is the html file that is served first when the website is loaded.
